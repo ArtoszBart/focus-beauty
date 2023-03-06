@@ -1,0 +1,40 @@
+@use './abstracts';
+@use './base';
+@use './layout';
+
+header {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	background-color: rosybrown;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding-inline: 5rem;
+	padding-block: 1rem;
+
+	ul {
+		height: 100%;
+		display: flex;
+		flex-direction: row;
+		list-style: none;
+
+		li:not(:last-child) {
+			margin-right: 1rem;
+		}
+	}
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+.tmp-50 {
+	width: 100vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
