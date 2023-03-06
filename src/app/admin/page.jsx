@@ -30,8 +30,10 @@ export default function AdminPanel() {
 						value={values.password}
 						onChange={handleChange}
 					/>
-					<span>{errorMessage}</span>
-					<button className='form-input-btn' type='submit'>
+					<span className='form-error' id='error'>
+						{errorMessage}
+					</span>
+					<button className='form-submit' type='submit'>
 						Zaloguj się
 					</button>
 					<span className='form-input-login'>
